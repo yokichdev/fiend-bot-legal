@@ -1,8 +1,8 @@
 :root {
   color-scheme: dark;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #111217;
-  color: #f4f4f5;
+  background: #000;
+  color: #fff;
 }
 
 * { box-sizing: border-box; }
@@ -11,26 +11,24 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 48px 20px;
-  background:
-    radial-gradient(circle at top left, rgba(217, 48, 55, .18), transparent 36rem),
-    #111217;
+  background: #000;
 }
 
 .card {
   width: min(760px, 100%);
   margin: 0 auto;
   padding: clamp(28px, 6vw, 64px);
-  border: 1px solid #30323a;
+  border: 1px solid #2b2b2b;
   border-radius: 22px;
-  background: #1b1c22;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+  background: #080808;
+  box-shadow: 0 24px 80px rgba(255, 255, 255, .035);
 }
 
 h1 { margin: 8px 0 18px; font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.05; }
 h2 { margin: 36px 0 10px; font-size: 1.2rem; }
-p, li { color: #d6d7dc; line-height: 1.7; }
+p, li { color: #d4d4d4; line-height: 1.7; }
 li + li { margin-top: 8px; }
-a { color: #ff7479; }
+a { color: #fff; }
 
 nav {
   display: grid;
@@ -40,15 +38,44 @@ nav {
 
 nav a {
   padding: 18px 20px;
-  border: 1px solid #3a3c45;
+  border: 1px solid #3a3a3a;
   border-radius: 12px;
   color: #fff;
   text-decoration: none;
-  background: #24262d;
+  background: #111;
 }
 
-nav a:hover { border-color: #d93037; background: #292b33; }
-.eyebrow { margin: 0; color: #ff7479; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.muted { color: #989ba5; font-size: .92rem; }
+nav a:hover { border-color: #fff; background: #191919; }
+.eyebrow { margin: 0; color: #b8b8b8; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.muted { color: #888; font-size: .92rem; }
 .back { display: inline-block; margin-bottom: 28px; text-decoration: none; }
 .document h1 { font-size: clamp(2rem, 6vw, 3rem); }
+
+.brand-logo {
+  width: min(430px, 100%);
+  height: clamp(92px, 22vw, 130px);
+  margin: 0 auto 34px;
+  overflow: hidden;
+  display: block;
+  background: #000;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.brand-logo.compact {
+  width: min(300px, 76%);
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #2b2b2b;
+}
